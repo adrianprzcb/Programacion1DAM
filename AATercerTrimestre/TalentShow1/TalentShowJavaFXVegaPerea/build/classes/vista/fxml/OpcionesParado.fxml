@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="1142.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PrincipalController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="1159.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../css_img/fondo.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="31.0" prefHeight="83.0" prefWidth="1142.0" styleClass="titulo" stylesheets="@../css_img/estilo1.css" text="Menú" textFill="WHITE" />
+      <Button layoutX="255.0" layoutY="171.0" mnemonicParsing="false" onAction="#registrarArtistas" text="Registro Artista" />
+      <Button layoutX="770.0" layoutY="171.0" mnemonicParsing="false" onAction="#actionClasificacion" text="Clasificacion Actual" />
+      <Button layoutX="481.0" layoutY="171.0" mnemonicParsing="false" onAction="#cambioEstado" onMouseClicked="#cambioEstado" text="Cambiar Estado Concurso" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="241.0" layoutY="249.0" onMouseClicked="#registrarArtistas" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../css_img/registro.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="476.0" layoutY="275.0" onMouseClicked="#cambioEstado" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../css_img/estado.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="768.0" layoutY="249.0" onMouseClicked="#actionClasificacion" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../css_img/Clasificacion.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="72.0" layoutX="1019.0" layoutY="452.0" onMouseClicked="#salir" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../css_img/salir.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="569.0" layoutY="453.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+      <ImageView fitHeight="54.0" fitWidth="74.0" layoutX="494.0" layoutY="442.0" onMouseClicked="#guardar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../css_img/guardar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

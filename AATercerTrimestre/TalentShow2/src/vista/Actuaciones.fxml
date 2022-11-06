@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="908.0" styleClass="fondo" stylesheets="@css/estilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladorGeneral">
+   <children>
+      <Label layoutX="294.0" layoutY="52.0" prefHeight="55.0" prefWidth="320.0" text="Panel de Actuaciones" textAlignment="CENTER">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPuntuacion" layoutX="415.0" layoutY="248.0" />
+      <Button fx:id="btPuntuar" disable="true" layoutX="316.0" layoutY="181.0" mnemonicParsing="false" onAction="#puntuar" styleClass="boton" stylesheets="@css/estilo.css" text="Puntuar" />
+      <Label layoutX="276.0" layoutY="253.0" text="Nueva Puntuación:" />
+      <Button fx:id="btNuevaActuacion" layoutX="459.0" layoutY="181.0" mnemonicParsing="false" onAction="#actuar" styleClass="boton" stylesheets="@css/estilo.css" text="Nueva Actuación" />
+      <Label fx:id="lblSalidaActuacion" layoutX="343.0" layoutY="302.0" text="Seleccione 'Nueva Actuación'." textAlignment="CENTER" />
+      <TextArea fx:id="areaActuacion" editable="false" layoutX="44.0" layoutY="353.0" prefHeight="245.0" prefWidth="821.0" />
+   </children>
+</AnchorPane>

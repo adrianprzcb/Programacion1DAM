@@ -1,0 +1,13 @@
+.label{
+    -fx-font-style: italic;
+}
+
+.boton{
+    -fx-background-color: 9ba59e;
+    -fx-font-size: medium;
+    -fx-border-radius: 20px;
+}
+
+.fondo{
+    -fx-background-color: b3fec8;
+}

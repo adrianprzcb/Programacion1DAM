@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="procesos.FXMLDocumentController">
+   <children>
+      <Button fx:id="btnIniciar" layoutX="361.0" layoutY="49.0" mnemonicParsing="false" onAction="#iniciar" prefHeight="25.0" prefWidth="168.0" text="Iniciar Nuevo Juego" />
+      <Label fx:id="txtIntrP" layoutX="6.0" layoutY="41.0" prefHeight="17.0" prefWidth="249.0" text="Introduce el número de Jugadores, Máx 10" />
+      <Label fx:id="txtIntrD" layoutX="14.0" layoutY="78.0" prefHeight="17.0" prefWidth="249.0" text="Introduce el número de Dados, Máx 5" />
+      <TextField fx:id="intrJugadores" layoutX="255.0" layoutY="37.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="intrDados" layoutX="255.0" layoutY="74.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextArea fx:id="consola" editable="false" layoutX="27.0" layoutY="350.0" prefHeight="158.0" prefWidth="556.0" />
+      <TextField fx:id="nombre" layoutX="81.0" layoutY="142.0" prefHeight="25.0" prefWidth="99.0" promptText="Nombre" visible="false" />
+      <Button fx:id="btnNext" layoutX="235.0" layoutY="142.0" mnemonicParsing="false" onAction="#next" text="Next" visible="false" />
+      <Button fx:id="btnRESET" layoutX="608.0" layoutY="424.0" mnemonicParsing="false" onAction="#reset" prefHeight="54.0" prefWidth="72.0" text="RESET" />
+      <Button fx:id="btnSiguientePartida" layoutX="240.0" layoutY="307.0" mnemonicParsing="false" onAction="#siguienteJugada" prefHeight="25.0" prefWidth="123.0" text="Siguiente Partida" visible="false" />
+      <Label fx:id="txtIntrJUG" layoutX="14.0" layoutY="110.0" prefHeight="17.0" prefWidth="219.0" text="Introduce el número de jugadas, Máx 10" />
+      <TextField fx:id="intrJugadas" layoutX="255.0" layoutY="106.0" prefHeight="25.0" prefWidth="46.0" />
+   </children>
+</AnchorPane>

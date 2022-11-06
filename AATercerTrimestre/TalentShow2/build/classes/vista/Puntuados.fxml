@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="777.0" styleClass="fondo" stylesheets="@css/estilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladorGeneral">
+   <children>
+      <Label layoutX="109.0" layoutY="42.0" text="Listado de Concursantes Mejor Puntuados">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btConsultar" layoutX="304.0" layoutY="151.0" mnemonicParsing="false" onAction="#consultar" styleClass="boton" stylesheets="@css/estilo.css" text="Consultar Clasificación" />
+      <TableView fx:id="tblTabla" layoutX="92.0" layoutY="205.0" prefHeight="417.0" prefWidth="593.0">
+        <columns>
+          <TableColumn fx:id="colArtista" prefWidth="292.0" text="Artista" />
+          <TableColumn fx:id="colPuntos" prefWidth="300.0" text="Puntuacion" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

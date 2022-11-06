@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="PR02GAPerezCobo">
+  <ClassDiagramComponents>
+    <Class name="NaveCombateOfialImperio" package="Objetos" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="factorLadoOscuro" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="codigoNave"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="atacar" returnType="int" visibility="public"/>
+        <Method name="getFactorLadoOscuro" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="NaveCombateOficialRebelde" package="Objetos" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="factorAstucia" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="codigoNave"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="atacar" returnType="int" visibility="public"/>
+        <Method name="getFactorAstucia" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="NaveDeCombate" package="Objetos" visibility="public" isAbstract="true" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="codigoNave" type="String" visibility="private" isFinal="true"/>
+        <Field name="factorAtaque" type="int" visibility="package"/>
+        <Field name="factorDefensa" type="int" visibility="package"/>
+        <Field name="puntosTotalesCombate" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="codigoNave"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="atacar" returnType="int" visibility="public" isAbstract="true"/>
+        <Method name="getCodigoNave" returnType="String" visibility="public"/>
+        <Method name="getFactorAtaque" returnType="int" visibility="public"/>
+        <Method name="getFactorDefensa" returnType="int" visibility="public"/>
+        <Method name="getPuntosTotalesCombate" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Main" package="pr02ga" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Procesos" package="pr02ga" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="rebeldes" type="NaveCombateOficialRebelde[]" visibility="package"/>
+        <Field name="imperios" type="NaveCombateOfialImperio[]" visibility="package"/>
+        <Field name="ganadores" type="String[]" visibility="package"/>
+        <Field name="combates" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="ejecutar" returnType="void" visibility="public"/>
+        <Method name="combates" returnType="void" visibility="public"/>
+        <Method name="ganadores" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Objetos.NaveCombateOfialImperio" target="Objetos.NaveDeCombate"/>
+    <IsRelation name="is" source="Objetos.NaveCombateOficialRebelde" target="Objetos.NaveDeCombate"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

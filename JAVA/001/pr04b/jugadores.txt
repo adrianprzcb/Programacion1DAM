@@ -1,0 +1,5 @@
+El jugador: t ha obtenido una puntuacion total de: 55
+El jugador: e ha obtenido una puntuacion total de: 59
+El jugador: w ha obtenido una puntuacion total de: 60
+El jugador: q ha obtenido una puntuacion total de: 61
+El jugador: r ha obtenido una puntuacion total de: 71

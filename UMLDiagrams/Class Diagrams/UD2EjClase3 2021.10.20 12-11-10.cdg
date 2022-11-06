@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UD2EjClase3">
+  <ClassDiagramComponents>
+    <Class name="Jugador" package="" visibility="public" xPosition="175.0" yPosition="143.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="dado" type="Dado" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="tirarDado" returnType="itn" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Dado" package="" visibility="public" xPosition="424.0" yPosition="143.0">
+      <Fields>
+        <Field name="numCaras" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

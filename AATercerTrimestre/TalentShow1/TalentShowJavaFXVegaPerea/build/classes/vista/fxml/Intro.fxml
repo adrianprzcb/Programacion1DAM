@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PrincipalController">
+   <children>
+      <ImageView fitHeight="577.0" fitWidth="1078.0" onKeyPressed="#volverMenu" onMouseClicked="#volverMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../css_img/TalentShow.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="56.0" layoutY="42.0" text="Proyecto hecho por:" textFill="#e4d4d4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="76.0" text="Marina Vega Perea" textFill="#fff2f2" />
+      <Label layoutX="74.0" layoutY="103.0" text="1º DAM" textFill="#fceeee" />
+      <Button defaultButton="true" layoutX="448.0" layoutY="459.0" mnemonicParsing="false" onAction="#cargar" prefHeight="61.0" prefWidth="183.0" text="Start">
+         <font>
+            <Font name="Wingdings 2" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

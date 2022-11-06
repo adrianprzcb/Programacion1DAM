@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="628.0" prefWidth="426.0" styleClass="fondo" stylesheets="@css/estilo.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladorMain">
+   <children>
+      <Label layoutX="78.0" layoutY="43.0" prefHeight="54.0" prefWidth="261.0" text="Talent Show" textAlignment="CENTER">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="btRegistro" layoutX="75.0" layoutY="243.0" mnemonicParsing="false" onAction="#registrarConcursantes" prefHeight="56.0" prefWidth="268.0" text="Registrar Concursantes" />
+      <Button fx:id="btNuevo" layoutX="75.0" layoutY="459.0" mnemonicParsing="false" onAction="#nuevoConcurso" prefHeight="56.0" prefWidth="268.0" text="Iniciar Nuevo Concurso" />
+      <Button fx:id="btConcurso" layoutX="75.0" layoutY="314.0" mnemonicParsing="false" onAction="#concursar" prefHeight="56.0" prefWidth="268.0" text="Concursar" />
+      <Button fx:id="btClasificacion" layoutX="75.0" layoutY="387.0" mnemonicParsing="false" onAction="#consultarClasificacion" prefHeight="56.0" prefWidth="268.0" text="Cocnsultar Clasificación" />
+      <Button fx:id="btSalir" layoutX="75.0" layoutY="530.0" mnemonicParsing="false" onAction="#salir" prefHeight="56.0" prefWidth="268.0" text="Salir" />
+      <RadioButton fx:id="rdParado" layoutX="48.0" layoutY="139.0" mnemonicParsing="false" onAction="#paradoMarcado" text="Parado">
+         <toggleGroup>
+            <ToggleGroup fx:id="estadoActual" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdLanzado" layoutX="167.0" layoutY="139.0" mnemonicParsing="false" onAction="#lanzadoMarcado" text="Lanzado" toggleGroup="$estadoActual" />
+      <RadioButton fx:id="rdFinalizado" layoutX="284.0" layoutY="139.0" mnemonicParsing="false" onAction="#finalizadoMarcado" text="Finalizado" toggleGroup="$estadoActual" />
+      <Label layoutX="74.0" layoutY="174.0" text="Una vez finalizado el concurso no podrá " />
+      <Label layoutX="120.0" layoutY="195.0" text="cambiar de nuevo el estado." />
+   </children>
+</AnchorPane>

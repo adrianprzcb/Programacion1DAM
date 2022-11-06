@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="180.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PrincipalController">
+   <children>
+      <Button layoutX="209.0" layoutY="111.0" mnemonicParsing="false" onAction="#crearNuevoConcurso" text="Sí" />
+      <Button layoutX="361.0" layoutY="111.0" mnemonicParsing="false" onAction="#handleButtonActionFinalizado" text="No" />
+      <Text layoutX="160.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Está seguro de que desea crear un nuevo concurso?" />
+      <Text fill="#685858" layoutX="160.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Se borrarán los registros actuales)" />
+   </children>
+</AnchorPane>

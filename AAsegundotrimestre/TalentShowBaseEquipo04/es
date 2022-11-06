@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>propiedades esp</comment>
+
+<entry key="registroArtistas">Registro Artistas</entry>
+<entry key="concurso">Concurso</entry>
+<entry key="lanzarConcurso">Lanzar Concurso</entry>
+<entry key="cambiarIdioma">Cambiar idioma</entry>
+<entry key="clasificacionActual">Clasificacion actual</entry>
+<entry key="clasificacionFinal">Clasificacion final</entry>
+<entry key="iniciarNuevoConcurso">Iniciar nuevo concurso</entry>
+<entry key="salir">Salir</entry>
+<entry key="opcNoValida">Selecciona una opcion valida</entry>
+<entry key="tipoArtista">Tipo de artistas: 1.Poeta - 2.Cantante - 3.Musico - 4.Malabarista - 5.Humorista</entry>
+<entry key="opcIntroducida">La opción introducida no es un número.</entry>
+<entry key="introducirOpc">Introduzca una opción: </entry>
+
+<entry key="seleccionIdioma">Selecciona idioma: 1.Español - 2. Ingles</entry>
+<entry key="idiomaNoValido">Selecciona un idioma valido</entry>
+<entry key="ioe">Error de toma de datos. Ejecute el programa de nuevo.</entry>
+<entry key="cnfe">No se ha podido encontrar la clase</entry>
+<entry key="nfe">La opción introducida no es un número.</entry>
+<entry key="ae">DEBE ESCRIBIR 1, 2, 3 , 4 o 5 PARA ELEGIR EL TIPO DE ARTISTA</entry>
+<entry key="ime">ERROR. SE ESPERABA UN ENTERO: VUELVA A INTENTARLO.</entry>
+<entry key="npe">ERROR. NO SE PUEDE DEJAR LA CADENA VACIA</entry>
+<entry key="npeMenu">Se ha producido un error al cargar el menu</entry>
+<entry key="ife">ERROR. SE ESPERABA UNA PALABRA: VUELVA A INTENTARLO</entry>
+
+<entry key="finPrograma">Fin del programa</entry>
+<entry key="introducirOpc">Introduzca una opción: </entry>
+<entry key="opcIncorrecta">Selecciona una opcion correcta</entry>
+<entry key="fin">Fin del programa</entry>
+<entry key="regArtistas">Registro Artistas</entry>
+<entry key="inicioConcurso">Concurso TalentShow</entry>
+<entry key="lanzarConcurso">Lanzar concurso</entry>
+<entry key="rankingFinal">Clasificacion final</entry>
+<entry key="nuevoConcurso">Iniciar nuevo concurso</entry>
+<entry key="salirPrograma">Saliendo del programa...</entry>
+<entry key="opcNValida">La opción introducida no tiene un proceso asociado.</entry>
+
+<entry key="deseaSalir">¿Desea salir?: 1.Si  2.No</entry>
+<entry key="elejirOpc">Elija la opción:</entry>
+<entry key="poetaRegistrado">Has registrado un Poeta</entry>
+<entry key="cantanteRegistrado">Has registrado un Cantante</entry>
+<entry key="musicoRegistrado">Has registrado un Musico</entry>
+<entry key="malabaristaRegistrado">Has registrado un Malabarista</entry>
+<entry key="humoristaRegistrado">Has registrado un Humorista</entry>
+
+<entry key="localidadArtista">Introduce la localidad del artista: </entry>
+<entry key="nombreArtista">Introduce el nombre del artista: </entry>
+<entry key="nombreExiste">El nombre introducido ya ha sido creado con anterioridad.</entry>
+<entry key="edadArtista">Introduce la edad: </entry>
+<entry key="aeEdad">LA EDAD MÍNIMA REQUERIDA ES DE 18 AÑOS.</entry>
+<entry key="nombreInstrumento">Introduce el nombre del instrumento:</entry>
+<entry key="nombreObjeto">Introduce el nombre del objeto que va a usar:</entry>
+<entry key="numObjetos">Introduce el numero de objetos que va a utilizar:</entry>
+<entry key="aeNumObjetos">HACER MALABARES CON MENOS DE 2 OBJETOS NO SERÁ ADMITIDO. POR FAVOR, INTRODUZCA UN NUMERO DE OBJETO MAYOR QUE 2.</entry>
+<entry key="tituloPoema">Introduce el titulo del poema</entry>
+<entry key="tituloCancion">Introduce el titulo de la cancion</entry>
+<entry key="sinConcursantesPorActuar">No quedan concursantes por actuar.</entry>
+<entry key="puntuacionArtista">Introduce una puntuación del 1 al 12:</entry>
+<entry key="aePuntuacion">ERROR. POR FAVOR, INTRODUZCA UNA PUNTUACIÓN ENTRE 1 Y 12.</entry>
+<entry key="aeSalir">POR FAVOR, INTRODUZCA EL NUMERO 1 O 2 PARA RESPONDER.</entry>
+<entry key="puntuacionClasificacion">Puntuación de </entry>
+<entry key="sinArtistasRegistrados">No hay ningun artista registrado.</entry>
+<entry key="finalizarConcurso">¿Quiere iniciar un nuevo concurso?: 1.Si  2.No</entry>
+
+<entry key="introducirNumFases">Introduce el numero de fases:</entry>
+<entry key="numConcursantes">Introduce el numero de concursantes que pasan en la fase </entry>
+<entry key="concursantesInsuficientes">No hay suficientes concursantes para empezar el concurso</entry>
+<entry key="continuarConcurso">Retomar concurso</entry>
+<entry key="introducirChiste">Introduce el chiste </entry>
+<entry key="chisteMin">Debe contar 1 chiste como minimo </entry>
+<entry key="numChiste">Introduce el numero de chistes</entry>
+<entry key="introduceUnNumero">Introduce un numero</entry>
+<entry key="rangoFases">El numero de fase debe estar entre 1 y 5</entry>
+<entry key="numConcursantesFase">Introduce el numero de concursantes que se clasifican en la fase </entry>
+<entry key="limiteNumConcursantesFase">El numero no puede ser mayor o igual que </entry>
+<entry key="noSePuedeEmpezarConcurso">No se puede empezar el concurso</entry>
+<entry key="cambiarNumeroDeFases">¿Cambiar numero de fases (Pulse 1) o añadir participantes(Pulse cualquier tecla)?</entry>
+<entry key="volviendoAlMenu">Volviendo al menu</entry>
+<entry key="concursoFinalizado">Concurso finalizado. El ganador es :</entry>
+<entry key="volviendoAlMenu">Volviendo al menu</entry>
+<entry key="ronda">Ronda </entry>
+<entry key="finalizada"> finalizada</entry>
+<entry key="opcNoCorrecta">Opcion introducida incorrecta. Continuando concurso </entry>
+</properties>

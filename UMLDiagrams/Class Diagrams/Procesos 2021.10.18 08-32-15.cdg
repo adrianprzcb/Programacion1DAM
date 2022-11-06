@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Procesos">
+  <ClassDiagramComponents>
+    <Class name="Procesos" package="ud2ejclase2" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="sc" type="Scanner" visibility="package"/>
+        <Field name="numeros" type="int[]" visibility="package"/>
+        <Field name="numeroInt" type="int" visibility="package"/>
+        <Field name="contador" type="int" visibility="package"/>
+        <Field name="arrayNum" type="int[]" visibility="package"/>
+        <Field name="arrayPal" type="String[]" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="ejecutar" returnType="void" visibility="public"/>
+        <Method name="cuentaNumero" returnType="void" visibility="public">
+          <Argument type="int[]" name="num"/>
+        </Method>
+        <Method name="concatenaPalabras" returnType="void" visibility="public">
+          <Argument type="int[]" name="num"/>
+          <Argument type="String[]" name="str"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

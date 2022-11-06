@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="withscene.Controller">
+   <children>
+      <RadioButton fx:id="male" layoutX="132.0" layoutY="135.0" mnemonicParsing="false" onAction="#eventButton" selected="true" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="132.0" layoutY="172.0" mnemonicParsing="false" onAction="#eventButton" text="Female" toggleGroup="$group" />
+      <RadioButton fx:id="other" layoutX="132.0" layoutY="220.0" mnemonicParsing="false" onAction="#eventButton" text="Other" toggleGroup="$group" />
+   </children>
+</AnchorPane>

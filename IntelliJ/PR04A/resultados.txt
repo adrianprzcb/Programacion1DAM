@@ -1,0 +1,3 @@
+Pepe: Puntuación = 0.
+Paco: Puntuación = 4.
+Luis: Puntuación = 0.

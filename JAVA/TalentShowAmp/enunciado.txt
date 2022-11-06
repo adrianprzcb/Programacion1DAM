@@ -1,0 +1,27 @@
+Enunciado
+
+Ampliar la aplicación Talent Show de manera que al arrancar muestre un menú como el siguiente:
+
+1 - Añadir un artista (Nota: no se le proporciona ninguna actuación externamente, empleará la suya por defecto)
+
+2 - Mostrar la lista de artistas
+
+3 - Actuación de todos los artistas
+
+4- Clasificación general
+
+5- Seleccionar tres mejores (almacenar en disco)
+
+6- Mostrar tres mejores
+
+S - Salir
+
+Todos los artistas pueden ejecutar una actuación por defecto, o bien, proporcionarle externamente los detalles de la actuación externamente, bien a través del constructor, bien a través de un método específico. Los artistas se almacenarán en un contenedor de tipo Map.
+
+Cuando se pulse la opción 1 se podrá añadir un artista al Map. Con la opción 2 se mostrarán todos los artistas del contenedor. Cuando se pulse la 3, actuarán los artistas de manera que tras cada actuación la aplicación tomará desde el teclado la nota que el jurado haya determinado para su actuación, y ya no podrán volver a actuar. Al pulsar la opción 4, se mostrarán los artistas ordenados de mayor a menor en base a la puntuación, todos los artistas que hayan actuado. Y con la opción 5, se almacenarán en disco los tres artistas que hayan obtenido mayor puntuación. Cada vez que se pulse la opción 5, volverá a generarse el archivo. Finalmente, con la opción 6, se mostrarán los artistas seleccionados, y que están almacenados en el archivo serializado.
+
+Se pide: Diseñar el diagrama de casos de uso y sus descripciones, el diagrama de clases, el código Java y la documentación en formato javadoc. Aplicar los principios de código limpio en su desarrollo.
+
+Nombre de la aplicación: ApTalentShowAmp.
+
+Nombre del proyecto: PrTalentShowAmp.

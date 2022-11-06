@@ -1,0 +1,3 @@
+manuelgarcia:contraseña123:mgarcia@gmail.com:Manuel:Garcia Iglesias
+javimartos:contraseña123:jmartos@gmail.com:Javier:Garcia Martos
+pepe23:contraseña777:pepe@gmail.com:Pepe:Viyuela

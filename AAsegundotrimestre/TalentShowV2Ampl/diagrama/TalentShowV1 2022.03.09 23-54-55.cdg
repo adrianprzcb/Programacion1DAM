@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TalentShowV1">
+  <ClassDiagramComponents>
+    <Class name="Artista" package="beans" visibility="public" isAbstract="true" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="localidad" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+        <Field name="puntuacion" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="localidad"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="saludar" returnType="void" visibility="public"/>
+        <Method name="despedirse" returnType="void" visibility="public"/>
+        <Method name="actuar" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="getLocalidad" returnType="String" visibility="public"/>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="getPuntuacion" returnType="int" visibility="public"/>
+        <Method name="setPuntuacion" returnType="void" visibility="public">
+          <Argument type="int" name="puntuacion"/>
+        </Method>
+        <Method name="setLocalidad" returnType="void" visibility="public">
+          <Argument type="String" name="localidad"/>
+        </Method>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cantante" package="beans" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="tituloCancion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="localidad"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="tituloCancion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="actuar" returnType="void" visibility="public"/>
+        <Method name="getTituloCancion" returnType="String" visibility="public"/>
+        <Method name="setTituloCancion" returnType="void" visibility="public">
+          <Argument type="String" name="tituloCancion"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Malabarista" package="beans" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="numObjetos" type="int" visibility="private"/>
+        <Field name="nombreObjeto" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="localidad"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="numObjetos"/>
+          <Argument type="String" name="nombreObjeto"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setNumObjetos" returnType="void" visibility="public">
+          <Argument type="int" name="numObjetos"/>
+        </Method>
+        <Method name="setNombreObjeto" returnType="void" visibility="public">
+          <Argument type="String" name="nombreObjeto"/>
+        </Method>
+        <Method name="actuar" returnType="void" visibility="public"/>
+        <Method name="getNumObjetos" returnType="int" visibility="public"/>
+        <Method name="getNombreObjeto" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Musico" package="beans" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="instrumento" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="localidad"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="instrumento"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actuar" returnType="void" visibility="public"/>
+        <Method name="getInstrumento" returnType="String" visibility="public"/>
+        <Method name="setInstrumento" returnType="void" visibility="public">
+          <Argument type="String" name="instrumento"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Poeta" package="beans" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="tituloPoema" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="localidad"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="String" name="tituloPoema"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setTituloPoema" returnType="void" visibility="public">
+          <Argument type="String" name="tituloPoema"/>
+        </Method>
+        <Method name="actuar" returnType="void" visibility="public"/>
+        <Method name="getTituloPoema" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Aplicacion" package="procesos" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="menu" type="Menu" visibility="private"/>
+        <Field name="opcionesMenu" type="OpcionesMenu" visibility="private"/>
+        <Field name="procesos" type="Procesos" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ejecutar" returnType="void" visibility="public"/>
+        <Method name="ejecutarMenuyProceso" returnType="int" visibility="private"/>
+        <Method name="serializarProceso" returnType="void" visibility="public"/>
+        <Method name="actualizarProceso" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Procesos" package="procesos" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="estado" type="String" visibility="private"/>
+        <Field name="artistas" type="ArrayList&lt;Artista&gt;" visibility="package"/>
+        <Field name="artista" type="Artista" visibility="package"/>
+        <Field name="indiceActuaciones" type="int" visibility="package"/>
+        <Field name="fileRegistro" type="File" visibility="package"/>
+        <Field name="nombres" type="ArrayList&lt;String&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package"/>
+      </Constructors>
+      <Methods>
+        <Method name="ejecutarOpc" returnType="void" visibility="package">
+          <Argument type="int" name="opc"/>
+        </Method>
+        <Method name="ejecutarOpcLanzado" returnType="void" visibility="package">
+          <Argument type="int" name="opc"/>
+        </Method>
+        <Method name="ejecutarOpcParado" returnType="void" visibility="package">
+          <Argument type="int" name="opc"/>
+        </Method>
+        <Method name="ejecutarOpcFinalizado" returnType="void" visibility="package">
+          <Argument type="int" name="opc"/>
+        </Method>
+        <Method name="ejecutarOpc1" returnType="void" visibility="private"/>
+        <Method name="ejecutarOpc2" returnType="void" visibility="private"/>
+        <Method name="ejecutarOpc3" returnType="void" visibility="private"/>
+        <Method name="ejecutarOpc4" returnType="void" visibility="private"/>
+        <Method name="ejecutarOpc5" returnType="void" visibility="private"/>
+        <Method name="ejecutarOpc6" returnType="void" visibility="private"/>
+        <Method name="ejecutarOpc7" returnType="void" visibility="private"/>
+        <Method name="ejecutarNada" returnType="void" visibility="private"/>
+        <Method name="elegirTipoYCrearArtista" returnType="void" visibility="private"/>
+        <Method name="determinarTipoArtista" returnType="void" visibility="private">
+          <Argument type="boolean" name="verificado"/>
+        </Method>
+        <Method name="registroPoeta" returnType="void" visibility="public"/>
+        <Method name="registroCantante" returnType="void" visibility="public"/>
+        <Method name="registroMusico" returnType="void" visibility="public"/>
+        <Method name="registroMalabarista" returnType="void" visibility="public"/>
+        <Method name="determinarLocalidad" returnType="String" visibility="private">
+          <Argument type="boolean" name="verificado"/>
+        </Method>
+        <Method name="determinarNombre" returnType="String" visibility="private">
+          <Argument type="boolean" name="verificado"/>
+        </Method>
+        <Method name="determinarEdad" returnType="int" visibility="private">
+          <Argument type="boolean" name="verificado"/>
+        </Method>
+        <Method name="insertarInstrumento" returnType="String" visibility="private">
+          <Argument type="boolean" name="verificado"/>
+        </Method>
+        <Method name="insertarNombreObjeto" returnType="String" visibility="private">
+          <Argument type="boolean" name="verificado"/>
+        </Method>
+        <Method name="insertarNumeroObjeto" returnType="int" visibility="private">
+          <Argument type="boolean" name="verificado"/>
+        </Method>
+        <Method name="insertarTituloPoema" returnType="String" visibility="private">
+          <Argument type="Boolean" name="verificado"/>
+        </Method>
+        <Method name="insertarTituloCancion" returnType="String" visibility="private">
+          <Argument type="boolean" name="verificado"/>
+        </Method>
+        <Method name="actuacionesArtistas" returnType="void" visibility="public"/>
+        <Method name="determinarPuntuacion" returnType="int" visibility="private"/>
+        <Method name="finalizarMetodo" returnType="int" visibility="private"/>
+        <Method name="elegirEstadoConcurso" returnType="String" visibility="private"/>
+        <Method name="getEstado" returnType="String" visibility="public"/>
+        <Method name="mostrarClasificacion" returnType="void" visibility="private"/>
+        <Method name="ordenarArtistas" returnType="ArrayList&lt;Artista&gt;" visibility="private"/>
+        <Method name="borrarRegistros" returnType="ArrayList&lt;Artista&gt;" visibility="private"/>
+      </Methods>
+    </Class>
+    <Interface name="Serializar" package="procesos" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Methods>
+        <Method name="abrirOutput" returnType="void" visibility="public">
+          <Argument type="String" name="nombreFichero"/>
+        </Method>
+        <Method name="cerrarOutput" returnType="void" visibility="public"/>
+        <Method name="escribir" returnType="void" visibility="public">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="abrirInput" returnType="void" visibility="public">
+          <Argument type="String" name="nombreFichero"/>
+        </Method>
+        <Method name="cerrarInput" returnType="void" visibility="public"/>
+        <Method name="leer" returnType="Object" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="SerializarImpl" package="procesos" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="fileOutput" type="FileOutputStream" visibility="private"/>
+        <Field name="output" type="ObjectOutputStream" visibility="private"/>
+        <Field name="fileInput" type="FileInputStream" visibility="private"/>
+        <Field name="input" type="ObjectInputStream" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="abrirOutput" returnType="void" visibility="public">
+          <Argument type="String" name="nombreFichero"/>
+        </Method>
+        <Method name="cerrarOutput" returnType="void" visibility="public"/>
+        <Method name="escribir" returnType="void" visibility="public">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="abrirInput" returnType="void" visibility="public">
+          <Argument type="String" name="nombreFichero"/>
+        </Method>
+        <Method name="cerrarInput" returnType="void" visibility="public"/>
+        <Method name="leer" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UD3EjClase02" package="procesos" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Menu" package="vista" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="SALIR" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="opcionesMenu" type="OpcionesMenu" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="OpcionesMenu" name="opcionesMenu"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="presentaMenu" returnType="void" visibility="public">
+          <Argument type="String" name="estado"/>
+        </Method>
+        <Method name="leeOpcMenu" returnType="int" visibility="public">
+          <Argument type="String" name="texto"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="OpcionesMenu" package="vista" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="UtilidadesES" package="vista" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields>
+        <Field name="flujoEntrada" type="BufferedReader" visibility="private" isStatic="true"/>
+        <Field name="flujoSalida" type="PrintStream" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrar" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="cadena"/>
+        </Method>
+        <Method name="mostrarln" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="cadena"/>
+        </Method>
+        <Method name="mostrarln" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Object" name="objeto"/>
+        </Method>
+        <Method name="pideCadena" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="mensaje"/>
+        </Method>
+        <Method name="pideEntero" returnType="int" visibility="public" isStatic="true">
+          <Argument type="String" name="mensaje"/>
+        </Method>
+        <Method name="leerString" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="leerInt" returnType="int" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="beans.Poeta" target="beans.Artista"/>
+    <IsRelation name="is" source="beans.Musico" target="beans.Artista"/>
+    <HasRelation name="menu" source="procesos.Aplicacion" target="vista.Menu" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="procesos.Procesos" target="beans.Artista" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="procesos" source="procesos.Aplicacion" target="procesos.Procesos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="procesos.SerializarImpl" target="procesos.Serializar"/>
+    <IsRelation name="is" source="beans.Malabarista" target="beans.Artista"/>
+    <HasRelation name="opcionesMenu" source="procesos.Aplicacion" target="vista.OpcionesMenu" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="beans.Cantante" target="beans.Artista"/>
+    <HasRelation name="artistas" source="procesos.Procesos" target="beans.Artista" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Artista&gt;"/>
+    <HasRelation name="artista" source="procesos.Procesos" target="beans.Artista" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="opcionesMenu" source="vista.Menu" target="vista.OpcionesMenu" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

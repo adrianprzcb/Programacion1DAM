@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="genclaves:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/genclaves_jar</output-path>
+    <root id="archive" name="genclaves.jar">
+      <element id="module-output" name="genclaves" />
+    </root>
+  </artifact>
+</component>

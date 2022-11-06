@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="595.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="procesos.TalentShowFXController">
+    <children>
+        <Button fx:id="btnAnadirArtistas" layoutY="65.0" onAction="#anadirArtistas" prefHeight="31.0" prefWidth="261.0" text="Añadir Artista" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button fx:id="btnConcursar" layoutY="105.0" onAction="#concursar" prefHeight="31.0" prefWidth="261.0" text="Concursar" />
+      <Button fx:id="btnSalir" layoutY="258.0" onAction="#salir" prefHeight="31.0" prefWidth="261.0" text="Salir" />
+      <Button fx:id="btnClasAct" layoutY="141.0" onAction="#mostrarClasActual" prefHeight="31.0" prefWidth="261.0" text="Clasificación Actual" />
+      <Button fx:id="btnClasFinal" layoutY="181.0" onAction="#mostrarClasFinal" prefHeight="31.0" prefWidth="261.0" text="Clasificación Final" />
+      <Button fx:id="btnIniciarNuevoConc" layoutY="220.0" onAction="#iniciarNuevoConcurso" prefHeight="31.0" prefWidth="261.0" text="Iniciar Nuevo Concurso" />
+      <RadioButton fx:id="radioparado" layoutX="14.0" layoutY="28.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="86.0" selected="true" text="Parado">
+         <toggleGroup>
+            <ToggleGroup fx:id="estado" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radiofinalizado" layoutX="186.0" layoutY="28.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="99.0" text="Finalizado" toggleGroup="$estado" />
+      <RadioButton fx:id="radioiniciado" layoutX="100.0" layoutY="28.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="86.0" text="Iniciado" toggleGroup="$estado" />
+      <RadioButton fx:id="chCantante" layoutX="395.0" layoutY="70.0" mnemonicParsing="false" onAction="#anadirCantante" prefHeight="21.0" prefWidth="99.0" text="Cantante" visible="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="artistas" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="chMalabarista" layoutX="500.0" layoutY="70.0" mnemonicParsing="false" onAction="#anadirMalabarista" prefHeight="21.0" prefWidth="111.0" text="Malabarista" toggleGroup="$artistas" visible="false" />
+      <RadioButton fx:id="chMusico" layoutX="618.0" layoutY="70.0" mnemonicParsing="false" onAction="#anadirMusico" prefHeight="21.0" prefWidth="99.0" text="Músico" toggleGroup="$artistas" visible="false" />
+      <RadioButton fx:id="chPoeta" layoutX="717.0" layoutY="70.0" mnemonicParsing="false" onAction="#anadirPoeta" prefHeight="21.0" prefWidth="99.0" text="Poeta" toggleGroup="$artistas" visible="false" />
+      <TextArea fx:id="labell" editable="false" layoutX="40.0" layoutY="318.0" prefHeight="221.0" prefWidth="846.0" wrapText="true">
+         <effect>
+            <Glow />
+         </effect>
+      </TextArea>
+      <TextField fx:id="nombre" layoutX="350.0" layoutY="105.0" prefHeight="31.0" prefWidth="129.0" promptText="Nombre" visible="false" />
+      <TextField fx:id="edad" layoutX="479.0" layoutY="105.0" prefHeight="31.0" prefWidth="59.0" promptText="Edad" visible="false" />
+      <TextField fx:id="localidad" layoutX="538.0" layoutY="105.0" prefHeight="31.0" prefWidth="129.0" promptText="Localidad" visible="false" />
+      <TextField fx:id="melodia" layoutX="668.0" layoutY="105.0" prefHeight="31.0" prefWidth="111.0" promptText="Melodia" visible="false" />
+      <TextField fx:id="poema" layoutX="668.0" layoutY="105.0" prefHeight="31.0" prefWidth="111.0" promptText="Poema" visible="false" />
+      <TextField fx:id="instrumento" layoutX="779.0" layoutY="105.0" prefHeight="31.0" prefWidth="138.0" promptText="Instrumento" visible="false" />
+      <TextField fx:id="numObjetos" layoutX="668.0" layoutY="105.0" prefHeight="31.0" prefWidth="129.0" promptText="numero Objetos" visible="false" />
+      <TextField fx:id="objeto" layoutX="797.0" layoutY="105.0" prefHeight="31.0" prefWidth="111.0" promptText="Objeto" visible="false" />
+      <Button fx:id="btnCreaArtista" layoutX="418.0" layoutY="141.0" mnemonicParsing="false" onAction="#crearArtista" prefHeight="31.0" prefWidth="334.0" text="Añadir Artista" visible="false" />
+      <TextArea fx:id="labelConcurso" editable="false" layoutX="286.0" layoutY="212.0" prefHeight="79.0" prefWidth="334.0" visible="false" />
+      <TextField fx:id="textPuntos" layoutX="676.0" layoutY="236.0" prefHeight="31.0" prefWidth="59.0" visible="false" />
+      <Button fx:id="btnPuntuar" layoutX="765.0" layoutY="236.0" mnemonicParsing="false" onAction="#puntuar" prefHeight="31.0" prefWidth="119.0" text="Puntuar" visible="false" />
+    </children>
+</AnchorPane>

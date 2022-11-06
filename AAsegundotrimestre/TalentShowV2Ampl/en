@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>propiedades eng</comment>
+
+<entry key="registroArtistas">Artists registration</entry>
+<entry key="concurso">Competition</entry>
+<entry key="lanzarConcurso">Launch competition</entry>
+<entry key="cambiarIdioma">Change language</entry>
+<entry key="clasificacionActual">Current ranking</entry>
+<entry key="clasificacionFinal">Final ranking</entry>
+<entry key="iniciarNuevoConcurso">Start new competition</entry>
+<entry key="salir">Exit</entry>
+<entry key="opcNoValida">Select a valid option</entry>
+<entry key="tipoArtista">Type of artists: 1.Poet - 2.Singer - 3.Musician - 4.Juggler</entry>
+<entry key="opcIntroducida">The option entered is not a number.</entry>
+<entry key="introducirOpc">Enter an option: </entry>
+
+<entry key="despedirse">Steve</entry>
+
+<entry key="seleccionIdioma">Select language: 1.Spanish - 2. English.</entry>
+<entry key="idiomaNoValido">Choose a valid language</entry>
+<entry key="ioe">Data acquisition error. Run the program again.</entry>
+<entry key="cnfe">The class could not be found.</entry>
+<entry key="nfe">The option entered is not a number.</entry>
+<entry key="ae">YOU MUST WRITE 1, 2, 3 or 4 TO CHOOSE ARTIST TYPE</entry>
+<entry key="ime">ERROR. AN INTEGER WAS EXPECTED: TRY AGAIN.</entry>
+<entry key="npe">ERROR. THE CHAIN CANNOT BE LEFT EMPTY</entry>
+<entry key="ife">ERROR. ONE WORD WAS EXPECTED: TRY AGAIN</entry>
+
+<entry key="finPrograma">End of program</entry>
+<entry key="introducirOpc">Enter an option: </entry>
+<entry key="opcIncorrecta">Please select a correct option</entry>
+<entry key="fin">End of program</entry>
+<entry key="regArtistas">Registering new Artists</entry>
+<entry key="concurs">Competition</entry>
+<entry key="lanzarC">Launching the competition</entry>
+<entry key="rankingFinal">Final Ranking</entry>
+<entry key="nuevoConcurso">Start new competition</entry>
+<entry key="salirPrograma">Leaving the program...</entry>
+<entry key="opcNValida">The option entered does not have an associated process.</entry>
+
+<entry key="deseaSalir">Do you wish to leave: 1.Yes 2.No</entry>
+<entry key="elejirOpc">Choose option:</entry>
+<entry key="poetaRegistrado">You have registered a Poet</entry>
+<entry key="cantanteRegistrado">You have registered a Singer</entry>
+<entry key="musicoRegistrado">You have registered a musician</entry>
+<entry key="malabaristaRegistrado">You have registered a Juggler</entry>
+
+<entry key="localidadArtista">"Enter the location of the artist:"</entry>
+<entry key="nombreArtista">Enter the artist's name:</entry>
+<entry key="nombreExiste">The name entered has already been created previously.</entry>
+<entry key="edadArtista">Enter the age:</entry>
+<entry key="aeEdad">THE MINIMUM AGE REQUIREMENT IS 18 YEARS OLD.</entry>
+<entry key="nombreInstrumento">Enter the name of the instrument:</entry>
+<entry key="nombreObjeto">Enter the name of the object to be used:</entry>
+<entry key="numObjetos">Enter the number of objects to be used:</entry>
+<entry key="aeNumObjetos">JUGGLING WITH LESS THAN 2 OBJECTS WILL NOT BE ALLOWED POR FAVOR, INTRODUZCA UN NUMERO DE OBJETO MAYOR QUE 2.</entry>
+<entry key="tituloPoema">Enter the title of the poem:</entry>
+<entry key="tituloCancion">Enter the title of the song:</entry>
+<entry key="sinConcursantesPorActuar">There are no contestants left to perform.</entry>
+<entry key="puntuacionArtista">Enter a score from 1 to 12:</entry>
+<entry key="aePuntuacion">ERROR. PLEASE ENTER A SCORE BETWEEN 1 AND 12.</entry>
+<entry key="aeSalir">PLEASE ENTER 1 OR 2 TO ANSWER.</entry>
+<entry key="puntuacionClasificacion">Score of </entry>
+<entry key="sinArtistasRegistrados">There are no registered artists.</entry>
+<entry key="finalizarConcurso">Do you want to end the contest: 1.Yes 2.No</entry>
+<entry key="numFases"></entry>
+</properties>

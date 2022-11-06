@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="1142.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PrincipalController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="1159.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../css_img/fondo.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="49.0" prefHeight="83.0" prefWidth="1142.0" styleClass="titulo" stylesheets="@../css_img/estilo1.css" text="Concurso" textFill="WHITE" />
+      <Button fx:id="botonComenzarActuacion" layoutX="93.0" layoutY="169.0" mnemonicParsing="false" onAction="#presentarArtista" text="Comenzar Actuacion" />
+      <TextField fx:id="presentacion" alignment="TOP_LEFT" editable="false" layoutX="265.0" layoutY="217.0" prefHeight="39.0" prefWidth="612.0" styleClass="textPresentacion" stylesheets="@../css_img/estilo1.css">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="preguntaPuntuacion" editable="false" layoutX="431.0" layoutY="421.0" prefHeight="31.0" prefWidth="279.0" text="¿Qué puntuacion le das a este artista? " visible="false">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></TextField>
+      <TextField fx:id="pistaPuntuacion" editable="false" layoutX="721.0" layoutY="421.0" prefHeight="31.0" prefWidth="121.0" styleClass="textPresentacion" stylesheets="@../css_img/estilo1.css" text="(1 a 12 puntos)" visible="false">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="puntuacion" layoutX="431.0" layoutY="469.0" prefHeight="31.0" prefWidth="65.0" visible="false" />
+      <Button fx:id="botonSetPuntuacion" layoutX="638.0" layoutY="469.0" mnemonicParsing="false" onAction="#puntuarActuacion" prefHeight="18.0" prefWidth="72.0" text="Puntuar" visible="false" />
+      <Button layoutX="998.0" layoutY="476.0" mnemonicParsing="false" onAction="#volverMenu" text="Volver al menú" />
+      <TextField fx:id="actuacion" alignment="TOP_LEFT" editable="false" layoutX="265.0" layoutY="266.0" prefHeight="39.0" prefWidth="612.0" styleClass="textPresentacion" stylesheets="@../css_img/estilo1.css">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="despedida" alignment="TOP_LEFT" editable="false" layoutX="265.0" layoutY="313.0" prefHeight="39.0" prefWidth="612.0" styleClass="textPresentacion" stylesheets="@../css_img/estilo1.css">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <ImageView fx:id="imgMalabarista" fitHeight="150.0" fitWidth="200.0" layoutX="107.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../css_img/malabarista.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCantante" fitHeight="132.0" fitWidth="190.0" layoutX="93.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../css_img/cantante.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgPoeta" fitHeight="150.0" fitWidth="200.0" layoutX="107.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../css_img/poeta.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgMusico" fitHeight="181.0" fitWidth="128.0" layoutX="108.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../css_img/musico.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

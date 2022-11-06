@@ -1,0 +1,45 @@
+.labels {
+    -fx-font-family: 'Open Sans', sans-serif;
+}
+
+.titulo{
+    -fx-font-family: "Monotype Corsiva";
+    -fx-font-size: 64px;
+}
+
+.fondoGeneral{
+    -fx-background-color:#FFFFCC;
+}
+
+.textPresentacion{
+    -fx-background-color:transparent;
+    -fx-text-fill: white;
+}
+
+
+
+.fondbox {
+    /*-fx-background-color: #336633;*/
+    -fx-background-image: url("fondo.jpg");
+    -fx-border-color: #000033;
+}
+
+
+.paneles {
+    -fx-border-color: #D00000;
+    -fx-background-color: #FFFFCC;
+    -fx-border-radius: 2px;
+}
+
+.botones {
+    -fx-background-color: #66CCCC;
+    -fx-border-color: #000;
+    -fx-border-radius: 16px;
+     
+}
+
+.textNormal {
+    -fx-font-family: "serif";
+    -fx-font-size: 20px;
+}
+

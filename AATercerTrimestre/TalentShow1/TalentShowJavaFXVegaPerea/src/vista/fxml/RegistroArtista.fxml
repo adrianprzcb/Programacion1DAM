@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="1142.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PrincipalController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="1159.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../css_img/fondo.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="49.0" prefHeight="83.0" prefWidth="1142.0" styleClass="titulo" stylesheets="@../css_img/estilo1.css" text="Registro de artistas" textFill="WHITE" />
+      <TabPane layoutX="238.0" layoutY="178.0" prefHeight="303.0" prefWidth="665.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Cantante">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="fondoGeneral" stylesheets="@../css_img/estilo1.css">
+                     <children>
+                        <Text layoutX="33.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+                        <Text layoutX="33.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localidad" wrappingWidth="81.33447265625" />
+                        <Text layoutX="34.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" />
+                        <Text layoutX="33.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo de la canción" />
+                        <TextField fx:id="localidadCantante" layoutX="205.0" layoutY="36.0" prefHeight="31.0" prefWidth="187.0" />
+                        <TextField fx:id="nombreCantante" layoutX="205.0" layoutY="82.0" />
+                        <TextField fx:id="edadCantante" layoutX="205.0" layoutY="130.0" prefHeight="31.0" prefWidth="91.0" />
+                        <TextField fx:id="cancionCantante" layoutX="206.0" layoutY="182.0" prefHeight="31.0" prefWidth="188.0" />
+                        <Button layoutX="511.0" layoutY="82.0" mnemonicParsing="false" onAction="#registroCantante" text="Registrar" />
+                        <Button layoutX="512.0" layoutY="130.0" mnemonicParsing="false" onAction="#limpiarTextFieldCantante" text="Limpiar" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Malabarista">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="fondoGeneral" stylesheets="@../css_img/estilo1.css">
+                     <children>
+                        <Text layoutX="33.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+                        <Text layoutX="33.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localidad" wrappingWidth="81.33447265625" />
+                        <Text layoutX="33.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" />
+                        <Text layoutX="33.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de objetos" />
+                        <TextField fx:id="localidadMalabarista" layoutX="204.0" layoutY="21.0" prefHeight="31.0" prefWidth="189.0" />
+                        <TextField fx:id="nombreMalabarista" layoutX="204.0" layoutY="62.0" />
+                        <TextField fx:id="edadMalabarista" layoutX="204.0" layoutY="104.0" prefHeight="31.0" prefWidth="92.0" />
+                        <TextField fx:id="numObjMalabarista" layoutX="204.0" layoutY="149.0" prefHeight="31.0" prefWidth="91.0" />
+                        <Text layoutX="33.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de los objetos" />
+                        <TextField fx:id="nombreObjMalabarista" layoutX="205.0" layoutY="193.0" prefHeight="31.0" prefWidth="187.0" />
+                        <Button layoutX="508.0" layoutY="81.0" mnemonicParsing="false" onAction="#registroMalabarista" prefHeight="29.0" prefWidth="81.0" text="Registrar" />
+                        <Button layoutX="510.0" layoutY="130.0" mnemonicParsing="false" onAction="#limpiarTextFieldMalabarista" text="Limpiar" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Poeta">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="fondoGeneral" stylesheets="@../css_img/estilo1.css">
+                     <children>
+                        <Text layoutX="33.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+                        <Text layoutX="33.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localidad" wrappingWidth="81.33447265625" />
+                        <Text layoutX="34.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" />
+                        <Text layoutX="33.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titulo del poema" />
+                        <TextField fx:id="localidadPoeta" layoutX="205.0" layoutY="36.0" prefHeight="31.0" prefWidth="187.0" />
+                        <TextField fx:id="nombrePoeta" layoutX="205.0" layoutY="82.0" />
+                        <TextField fx:id="edadPoeta" layoutX="205.0" layoutY="130.0" prefHeight="31.0" prefWidth="91.0" />
+                        <TextField fx:id="tituloPoeta" layoutX="206.0" layoutY="182.0" prefHeight="31.0" prefWidth="188.0" />
+                        <Button layoutX="511.0" layoutY="82.0" mnemonicParsing="false" onAction="#registroPoeta" text="Registrar" />
+                        <Button layoutX="512.0" layoutY="130.0" mnemonicParsing="false" onAction="#limpiarTextFieldPoeta" text="Limpiar" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Musico">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="fondoGeneral" stylesheets="@../css_img/estilo1.css">
+                     <children>
+                        <Text layoutX="33.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+                        <Text layoutX="33.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localidad" wrappingWidth="81.33447265625" />
+                        <Text layoutX="34.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" />
+                        <Text layoutX="33.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del instrumento" />
+                        <TextField fx:id="localidadMusico" layoutX="205.0" layoutY="36.0" prefHeight="31.0" prefWidth="187.0" />
+                        <TextField fx:id="nombreMusico" layoutX="205.0" layoutY="82.0" />
+                        <TextField fx:id="edadMusico" layoutX="205.0" layoutY="130.0" prefHeight="31.0" prefWidth="91.0" />
+                        <TextField fx:id="instrumentoMusico" layoutX="206.0" layoutY="182.0" prefHeight="31.0" prefWidth="188.0" />
+                        <Button layoutX="511.0" layoutY="82.0" mnemonicParsing="false" onAction="#registroMusico" text="Registrar" />
+                        <Button layoutX="512.0" layoutY="130.0" mnemonicParsing="false" onAction="#limpiarTextFieldMusico" text="Limpiar" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="988.0" layoutY="466.0" mnemonicParsing="false" onAction="#volverMenu" text="Volver al menú" />
+   </children>
+</AnchorPane>

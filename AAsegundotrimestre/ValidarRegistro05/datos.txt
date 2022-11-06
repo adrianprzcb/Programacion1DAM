@@ -1,0 +1,9 @@
+usu:usuario:usuario@email.com:Usuario 1
+usuario2:usu2:usuario@email.com:Usuario 2
+usuario3:usuario3:usuario3email.com:Usuario 3
+usuario4:usuario4:usuario4@email.com:Usu4
+usuariovalido1:usuarioval1:usuarioval1@email.com:Usuario valido 1
+usuariovalido2:usuarioval2:usuarioval2@email.com:Usuario valido 2
+usuariovalido2:usuarioval2:usuarioval2@email.com:Usuario valido 2
+usuarioRep:usuarioRep1:usuario@email.com:usuarioRep1
+usuarioRep:usuarioRep2:usuario@email.com:usuarioRep2

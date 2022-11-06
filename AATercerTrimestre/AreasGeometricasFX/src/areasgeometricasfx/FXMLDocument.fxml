@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="285.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="areasgeometricasfx.FXMLDocumentController">
+    <children>
+      <ChoiceBox fx:id="choicebox" layoutX="24.0" layoutY="29.0" prefWidth="150.0" />
+      <Button fx:id="btnCalcular" layoutX="24.0" layoutY="112.0" mnemonicParsing="false" onAction="#calcular" text="Calcular" visible="false" />
+      <Label fx:id="choiceLabel" layoutX="24.0" layoutY="161.0" prefHeight="47.0" prefWidth="366.0" />
+      <TextField fx:id="insLado" layoutX="24.0" layoutY="70.0" prefHeight="31.0" prefWidth="57.0" promptText="LADO" visible="false" />
+      <TextField fx:id="insAltura" layoutX="81.0" layoutY="70.0" prefHeight="31.0" prefWidth="73.0" promptText="ALTURA" visible="false" />
+      <TextField fx:id="insBase" layoutX="154.0" layoutY="70.0" prefHeight="31.0" prefWidth="57.0" promptText="BASE" visible="false" />
+      <TextField fx:id="insRadio" layoutX="211.0" layoutY="70.0" prefHeight="31.0" prefWidth="64.0" promptText="RADIO" visible="false" />
+      <Button fx:id="btnElegir" layoutX="109.0" layoutY="112.0" mnemonicParsing="false" onAction="#elegirFigura" text="Elegir" />
+      <Label layoutX="26.0" layoutY="4.0" prefHeight="21.0" prefWidth="223.0" text="CALCULADORA DE AREAS" textFill="#a41d1d" />
+    </children>
+</AnchorPane>
